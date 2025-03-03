@@ -13,7 +13,7 @@ This project is a basic implementation of an onion routing network that enhances
 
 ## Project Structure
 ```
-Simple-Onion-Routing-Network-TD4/
+Onion-routing/
 │── src/
 │   ├── crypto.ts   # Cryptographic utilities
 │   ├── network.ts  # Network routing logic
@@ -29,7 +29,7 @@ Simple-Onion-Routing-Network-TD4/
 1. Clone the repository:
    ```sh
    git clone <repository-url>
-   cd Simple-Onion-Routing-Network-TD4
+   cd Onion-routing
    ```
 2. Install dependencies:
    ```sh
