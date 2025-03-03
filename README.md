@@ -1,23 +1,23 @@
 # Simple Onion Routing Network
 
 ## Overview
-This project implements a simple onion routing network where messages are securely transmitted through multiple nodes before reaching the final destination. The system ensures privacy by encrypting messages at each hop.
+This project is a basic implementation of an onion routing network that enhances privacy by securely transmitting messages through multiple nodes before reaching the final destination. Each message is encrypted at every hop to maintain confidentiality.
 
 ## Features
-- Start multiple nodes and users.
-- Register nodes with a central registry.
-- Send and receive encrypted messages.
-- RSA and symmetric encryption support.
-- Forward messages through a defined network circuit.
-- Simple API routes for retrieving message details.
+- Initialize multiple nodes and users.
+- Central registry for node registration.
+- Secure message transmission using encryption.
+- Support for RSA and symmetric encryption.
+- Message forwarding through a structured network circuit.
+- API endpoints for retrieving message information.
 
 ## Project Structure
 ```
 Simple-Onion-Routing-Network-TD4/
 │── src/
-│   ├── crypto.ts   # Cryptographic functions
-│   ├── network.ts  # Network and routing logic
-│   ├── registry.ts # Node registration logic
+│   ├── crypto.ts   # Cryptographic utilities
+│   ├── network.ts  # Network routing logic
+│   ├── registry.ts # Node registration handling
 │── __test__/
 │   ├── tests/
 │   │   ├── onionRouting.test.ts  # Tests for onion routing
@@ -37,11 +37,11 @@ Simple-Onion-Routing-Network-TD4/
    ```
 
 ## Usage
-### Starting the Network
-To start the network with a specified number of nodes and users, modify the network initialization script accordingly.
+### Initializing the Network
+Modify the network initialization script to start the network with a desired number of nodes and users.
 
 ### API Endpoints
-The system provides the following API routes:
+The following API routes are available:
 - **Node Routes:**
   - `GET /getLastReceivedEncryptedMessage`
   - `GET /getLastReceivedDecryptedMessage`
@@ -52,27 +52,27 @@ The system provides the following API routes:
   - `GET /getLastSentMessage`
 
 ## Cryptographic Functions
-The cryptographic module provides functions for:
+The cryptographic module includes:
 - RSA key generation (`generateRsaKeyPair`)
-- RSA encryption and decryption (`rsaEncrypt`, `rsaDecrypt`)
-- Symmetric key generation (`createRandomSymmetricKey`)
-- Symmetric encryption and decryption (`symEncrypt`, `symDecrypt`)
-- Key import/export functions
+- RSA encryption/decryption (`rsaEncrypt`, `rsaDecrypt`)
+- Symmetric key management (`createRandomSymmetricKey`)
+- Symmetric encryption/decryption (`symEncrypt`, `symDecrypt`)
+- Key import/export utilities
 
 ## Running Tests
-The project includes automated tests using Jest.
-To run tests, use:
+Automated tests are implemented using Jest.
+Run tests with:
 ```sh
 npm run test
 ```
-### Current Test Status
+### Test Summary
 ✔ **27 Passed Tests**
-✎ **5 TODO Tests** (Hidden tests need implementation)
+✎ **5 Pending Tests** (Require further implementation)
 
-## Future Improvements
-- Implement additional hidden tests.
-- Enhance security mechanisms.
-- Optimize message forwarding performance.
+## Future Enhancements
+- Complete pending test implementations.
+- Strengthen security features.
+- Improve message forwarding efficiency.
 
 ## License
 This project is licensed under the MIT License.
