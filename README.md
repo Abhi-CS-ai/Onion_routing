@@ -1,4 +1,4 @@
-# Simple Onion Routing Network
+# Onion Routing Network
 
 ## Overview
 This project is a basic implementation of an onion routing network that enhances privacy by securely transmitting messages through multiple nodes before reaching the final destination. Each message is encrypted at every hop to maintain confidentiality.
